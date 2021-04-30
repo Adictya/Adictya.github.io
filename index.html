@@ -15,6 +15,24 @@
     <div id="container">
 	  <span id="text">जल्द आ</br>
 		रहा है</span>
+    <script>
+      const ele = document.getElementById("text");
+            ele.onmouseover = () =>{
+                    ele.innerHTML = "Coming</br>soon"
+                  }
+            ele.onmouseout = () =>{
+                    ele.innerHTML = "जल्द आ</br>रहा है"
+                  }
+
+            setTimeout(()=>{
+                    ele.innerHTML = "Coming</br>soon"
+                    console.log("eng")
+                  },1000)
+            setTimeout(()=>{
+                    ele.innerHTML = "जल्द आ</br>रहा है"
+                    console.log("hidn")
+                  },3000)
+    </script>
     </div>
   </body>
 </html>
